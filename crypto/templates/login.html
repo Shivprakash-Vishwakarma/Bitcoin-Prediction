@@ -1,0 +1,21 @@
+{% extends "home.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<div class="form">
+    <h1 class="text-primary">Login</h1>
+    <form method="POST" class="register" autocomplete="off">
+        {% csrf_token %}
+        {{ login_form|crispy }}
+        <div class="button-place">
+        <button class="btn btn-primary" type="submit">Login</button>
+        </div>
+    </form>
+    <div class="p-place" style="width: 500px;">
+    <p style="color: white;">Don't have an account? <a href="/register">Create an account</a></p>
+    </div>
+</div>
+
+{% endblock %}

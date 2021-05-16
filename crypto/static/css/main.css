@@ -1,0 +1,26 @@
+.mycontent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bitcoin {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+}
+.nav-link {
+  font-size: 20px;
+}
+.content-center {
+  width: 50%;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+@media (max-width: 990px) {
+  .content-center {
+    width: 100%;
+    text-align: center;
+  }
+}
